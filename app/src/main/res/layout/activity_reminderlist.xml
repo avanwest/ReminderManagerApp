@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:textColor="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/addReminderListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:onClick="addList"
+        android:text="Add List"
+        app:layout_constraintStart_toEndOf="@+id/addReminderListName"
+        app:layout_constraintTop_toBottomOf="@id/usersLists" />
+
+    <LinearLayout
+        android:id="@+id/listWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="49dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addReminderListButton"
+
+        android:background="@color/colorPrimary">
+
+        <ListView
+            android:id="@+id/reminderListListView"
+            android:layout_width="368dp"
+            android:layout_height="447dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addReminderListName" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/addReminderListName"
+        android:layout_width="281dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Reminder List Name"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/addReminderListButton" />
+
+    <TextView
+        android:id="@+id/usersLists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="28dp"
+        android:text="'s Reminder Lists"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

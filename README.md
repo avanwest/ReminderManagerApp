@@ -6,6 +6,6 @@
 ![](GLM_ReminderApp_UI.jpg)
 
 ### User Video Walkthrough
-![User Video](https://i.imgur.com/GAMugUf.gif)
+![User Video](https://i.imgur.com/z78CTpM.gif)
 
 
